@@ -37,7 +37,7 @@ fn empty() {
     });
 
     // fails: assertion failed: data.is::<T>()
-    let _ = match instance.create_surface_from_canvas(&canvas) {
+    let _ = match instance.create_surface_from_canvas(canvas) {
         Ok(surface) => surface,
         Err(err) => {
             panic!("{}", err.to_string())
